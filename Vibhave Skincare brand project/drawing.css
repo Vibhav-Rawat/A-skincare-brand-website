@@ -1,0 +1,45 @@
+.drawing {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #f5dce0;
+}
+
+.drawing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: url("images/drawing-flowers.jpeg") center / cover no-repeat;
+  transform: scaleX(-1);
+}
+
+.drawing::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 250, 246, 0.97) 0%,
+    rgba(255, 250, 246, 0.94) 34%,
+    rgba(255, 250, 246, 0.62) 55%,
+    rgba(255, 250, 246, 0.08) 100%
+  );
+  pointer-events: none;
+}
+
+.drawing-copy {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .drawing::after {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 250, 246, 0.92),
+      rgba(255, 250, 246, 0.68)
+    );
+  }
+}
