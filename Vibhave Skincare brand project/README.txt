@@ -1,22 +1,37 @@
 VIBHAVÉ — EVERYDAY SKINCARE
-HTML + CSS + JavaScript mini project
+==========================
+
+A static skincare brand website built with HTML, CSS and vanilla JavaScript.
+It is a front-end project demo; no installation or build tools are required.
 
 PAGES
-1. index.html — Home
-2. shop.html — Product catalogue, filters, sorting and demo cart
-3. about.html — Brand story
-4. guide.html — Skincare guide and FAQ
-5. reviews.html — Sample testimonials
-6. contact.html — Contact form with JavaScript validation
+-----
+- index.html   Home page and featured products
+- shop.html    Product catalogue, category filters, price sorting and demo bag
+- about.html   Brand story and values
+- guide.html   Beginner-friendly skincare routine and FAQ
+- reviews.html Sample reviews, clearly marked as fictional
+- contact.html Contact form with front-end validation
 
-FILES
-- style.css: shared styling for all six pages
-- script.js: cart, filters, sorting and form validation
+PROJECT FILES
+-------------
+- style.css    Shared styles
+- drawing.css  Additional styling for the home page
+- script.js    Bag, product filtering and sorting, and contact form interactions
+- images/      Product and page imagery
 
-JAVASCRIPT FEATURES
-- Product category filtering
-- Product sorting by price
-- Add to bag, remove from bag and clear bag
-- Cart data saved with localStorage
-- Contact form validation
+GETTING STARTED
+---------------
+1. Open the project folder.
+2. Open index.html in a web browser.
 
+For local development, open the folder in VS Code and use the Live Server
+extension. There are no package installation or build steps.
+
+DEMO NOTES
+----------
+- The shopping bag is stored in the browser's localStorage.
+- Checkout and payment are not available.
+- The contact form validates input in the browser but does not send email or
+  store messages.
+- Reviews are fictional examples, not verified customer feedback.
